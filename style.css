@@ -1,0 +1,70 @@
+:root{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: auto;
+    padding: 100px;
+}
+
+
+.top{
+    padding:30px;
+}
+.top h3{
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+h2{
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+.top p{
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+    line-height: 2.5;
+}
+
+.left{
+    background-color: hsl(179, 62%, 43%);
+    padding:30px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+.bottom p, h3 {
+    color: white;
+}
+span{
+    font-size: 2.4em;
+    font-weight: 700;
+    color:white;
+}
+
+button{
+    margin: auto;
+    text-align: center;
+    padding: 20px 100px;
+    border-radius: 10px ;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+}
+.right{
+    padding: 30px;
+    background:rgb(71, 204, 204);
+    line-height: 1.6;
+}
+@media screen and (max-width:375px){
+
+    main{
+        display:flex;
+        flex-direction: column;
+
+    }
+ 
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
