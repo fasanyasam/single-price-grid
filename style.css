@@ -1,13 +1,20 @@
+/* default settings for fonts and margin on the page  */
 :root{
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     margin: auto;
-    padding: 100px;
 }
-
-
+/* media query for screen size between 375px stated later and 1440px (max)  */
+@media screen and (max-width:1440px){
+/* The main element carrying all the page contents */
+main{
+    margin: auto;
+    width:100%;
+    padding: 30px 100px 0 100px;
+}
+/* CSS for the top section of the page  */
 .top{
-    padding:30px;
+    width: 90%;
 }
 .top h3{
     font-weight: 700;
@@ -23,16 +30,21 @@ h2{
     line-height: 2.5;
 }
 
-.left{
-    background-color: hsl(179, 62%, 43%);
-    padding:30px;
-}
+/* CSS for the bottom  section of the page  */
 .bottom{
     display: flex;
     flex-direction: row;
+    width: 90%;
 }
 .bottom p, h3 {
     color: white;
+}
+
+/* CSS for the bottom-left section of the page  */
+.left{
+    background-color: hsl(179, 62%, 43%);
+    padding:30px;
+    width: 50%;
 }
 span{
     font-size: 2.4em;
@@ -44,24 +56,42 @@ button{
     margin: auto;
     text-align: center;
     padding: 20px 100px;
-    border-radius: 10px ;
+    border-radius: 6px ;
     background-color: hsl(71, 73%, 54%);
     color: white;
     font-weight: 700;
     font-size: 1rem;
     border: none;
 }
+
+/* CSS for the bottom right section of the page  */
+
 .right{
     padding: 30px;
     background:rgb(71, 204, 204);
-    line-height: 1.6;
+    line-height: 1.5;
+    width: 50%;;
 }
+}
+/* for screen sizes below 375px */
 @media screen and (max-width:375px){
 
     main{
         display:flex;
         flex-direction: column;
-
+        padding: 10px;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .left, .right{
+        width: 90%;
+    }
+    button{
+        width: 100%;
+        padding: 10px;
     }
  
 }
